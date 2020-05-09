@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	a {
+		margin: 100px;
+		height: 33px;  /* 盒子高度 */
+		display: inline-block;
+		background: url(images/to.png) no-repeat;
+		color: #fff;
+		text-decoration: none;
+		line-height: 33px;  /* 居中对齐 */
+		padding-left: 15px;
+	}
+	span {
+		display: inline-block;
+		height: 33px;
+		background: url(images/to.png) no-repeat right;
+		padding-right: 15px;
+	}
+	</style>
+</head>
+<body>
+	<!-- 核心是给a一个图片的左对齐，span给一个右对齐 -->
+	<a href="#">
+		<span>首页</span>  <!-- span放字可以随字数的多少而伸缩 -->
+	</a>
+</body>
+</html>

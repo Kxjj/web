@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	.sf {
+		width: 1259px;   /*顺丰图片的大小*/
+		height: 472px;
+		margin: 100px auto;   /*居中对齐*/
+		position: relative;   /* 相对定位*/
+	}
+	/*子绝父相，父亲相对定位，儿子以父亲为标准*/
+	.nav {
+		width: 960px;
+		height: 80px;
+		background-color: #000;  /*黑色*/
+		position: absolute;  /*绝对定位不占有位置才能压住顺丰图片*/
+		bottom: 0;
+		left: 50%;  /*父盒子的一半大小，*/
+		margin-left: -480px;   /*再往左走自己的一半，负值   这样就居中了*/
+	}
+	.nav li {
+		float: left;  /*每个li浮动，让他们在同一行*/
+		width: 160px;
+		height: 80px;
+	}
+	.nav li a {
+		width: 160px;
+		height: 80px;
+		display: block;  /*a要转换才能设置大小*/
+		text-align: center;
+		line-height: 80px;
+		color: #fff;
+		text-decoration: none;
+	}
+	.nav li a:hover {
+		background-color: #fff;
+		color: #000;
+	}
+	</style>
+</head>
+<body>
+	<div class="sf">
+		<a href="#">
+			<img src="images/sf.png" height="472" width="1259" alt="">
+		</a>
+		<div class="nav">
+			<ul>
+				<li><a href="#">快递查询</a></li>
+				<li><a href="#">快递查询</a></li>
+				<li><a href="#">快递查询</a></li>
+				<li><a href="#">快递查询</a></li>
+				<li><a href="#">快递查询</a></li>
+				<li><a href="#">快递查询</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
